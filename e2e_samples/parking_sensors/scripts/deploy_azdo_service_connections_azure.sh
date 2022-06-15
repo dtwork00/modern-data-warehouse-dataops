@@ -58,6 +58,8 @@ az_sp=$(az ad sp create-for-rbac \
 service_principal_id=$(echo "$az_sp" | jq -r '.appId')
 az_sp_tenant_id=$(echo "$az_sp" | jq -r '.tenant')
 
+sleep 4m
+
 # Create Azure Service connection in Azure DevOps
 azure_devops_ext_azure_rm_service_principal_key=$(echo "$az_sp" | jq -r '.password')
 export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=$azure_devops_ext_azure_rm_service_principal_key
