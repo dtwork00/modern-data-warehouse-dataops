@@ -2,7 +2,7 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License. See LICENSE in the project root for license information.
 #-----------------------------------------------------------------------------------------
-FROM python:3.7-stretch
+FROM mcr.microsoft.com/mirror/docker/library/python:3.7-buster
 
 # Configure apt
 ENV DEBIAN_FRONTEND=noninteractive
