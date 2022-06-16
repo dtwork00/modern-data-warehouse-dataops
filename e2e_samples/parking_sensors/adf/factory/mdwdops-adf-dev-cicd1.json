@@ -1,0 +1,9 @@
+{
+	"name": "mdwdops-adf-dev-cicd1",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ba611e37-f722-4eb6-b48b-7c610ea21f59",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
